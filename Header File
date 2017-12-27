@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+class PowersOfThree
+{
+	public:
+	PowersOfThree(int);
+	PowersOfThree();
+	int powerInterval(int);
+	void calculateIntervals();
+	void printArray();
+
+
+	private:
+	int target;
+	int interval;
+	int numberz[10];
+
+};
