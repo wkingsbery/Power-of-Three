@@ -1,0 +1,18 @@
+int main()
+{
+	cout << "Welcome!  This program takes a number from -121 and 121 and returns the number into a sum of positive and negative powers of three."  << endl;
+	char keep='y';
+	while (keep == 'y')
+	{
+		int number;
+		cout << "Enter a number between -121 and 121." << endl;
+		cin >> number;
+        	PowersOfThree mine(number);
+      		mine.calculateIntervals();	
+		mine.printArray();
+		cout << endl;
+		cout << "Would you like to do this again? 'y'= Yes and 'n' = No" << endl;
+		cin >> keep;
+	}
+}
+
